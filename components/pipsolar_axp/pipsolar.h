@@ -9,7 +9,7 @@
 #include "esphome/core/component.h"
 
 namespace esphome {
-namespace pipsolar {
+namespace pipsolar_axp {
 
 enum ENUMPollingCommand {
   POLLING_QPIRI = 0,

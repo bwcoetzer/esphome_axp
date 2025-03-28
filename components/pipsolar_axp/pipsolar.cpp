@@ -1,11 +1,11 @@
-#include "pipsolar.h"
+#include "pipsolar_axp.h"
 #include "esphome/core/log.h"
 #include "esphome/core/helpers.h"
 
 namespace esphome {
-namespace pipsolar {
+namespace pipsolar_axp {
 
-static const char *const TAG = "pipsolar";
+static const char *const TAG = "pipsolar_axp";
 
 void Pipsolar::setup() {
   this->state_ = STATE_IDLE;
