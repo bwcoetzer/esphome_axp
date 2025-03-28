@@ -59,7 +59,7 @@ CONF_OUTPUT_LOAD_PERCENT = "output_load_percent"
 CONF_BATTERY_CHARGING_CURRENT = "battery_charging_current"
 CONF_BATTERY_CAPACITY_PERCENT = "battery_capacity_percent"
 CONF_INVERTER_HEAT_SINK_TEMPERATURE = "inverter_heat_sink_temperature"
-CONF_PV_INPUT_CURRENT_FOR_BATTERY = "pv_input_current_for_battery"
+CONF_PV_INPUT_CURRENT = "pv_input_current"
 CONF_PV_INPUT_VOLTAGE = "pv_input_voltage"
 CONF_BATTERY_VOLTAGE_SCC = "battery_voltage_scc"
 CONF_BATTERY_DISCHARGE_CURRENT = "battery_discharge_current"
@@ -230,7 +230,7 @@ TYPES = {
         accuracy_decimals=1,
         device_class=DEVICE_CLASS_TEMPERATURE,
     ),
-    CONF_PV_INPUT_CURRENT_FOR_BATTERY: sensor.sensor_schema(
+    CONF_PV_INPUT_CURRENT: sensor.sensor_schema(
         unit_of_measurement=UNIT_AMPERE,
         accuracy_decimals=1,
         device_class=DEVICE_CLASS_CURRENT,

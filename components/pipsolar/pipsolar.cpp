@@ -210,8 +210,8 @@ void Pipsolar::loop() {
         if (this->inverter_heat_sink_temperature_) {
           this->inverter_heat_sink_temperature_->publish_state(value_inverter_heat_sink_temperature_);
         }
-        if (this->pv_input_current_for_battery_) {
-          this->pv_input_current_for_battery_->publish_state(value_pv_input_current_for_battery_);
+        if (this->pv_input_current_) {
+          this->pv_input_current_->publish_state(value_pv_input_current_);
         }
         if (this->pv_input_voltage_) {
           this->pv_input_voltage_->publish_state(value_pv_input_voltage_);
@@ -458,7 +458,7 @@ void Pipsolar::loop() {
             &value_ac_output_apparent_power_, &value_ac_output_active_power_, &value_output_load_percent_,   // NOLINT
             &value_bus_voltage_, &value_battery_voltage_, &value_battery_charging_current_,                  // NOLINT
             &value_battery_capacity_percent_, &value_inverter_heat_sink_temperature_,                        // NOLINT
-            &value_pv_input_current_for_battery_, &value_pv_input_voltage_, &value_battery_voltage_scc_,     // NOLINT
+            &value_pv_input_current_, &value_pv_input_voltage_, &value_battery_voltage_scc_,     // NOLINT
             &value_battery_discharge_current_, &value_add_sbu_priority_version_,                             // NOLINT
             &value_configuration_status_, &value_scc_firmware_version_, &value_load_status_,                 // NOLINT
             &value_battery_voltage_to_steady_while_charging_, &value_charging_status_,                       // NOLINT
